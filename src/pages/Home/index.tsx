@@ -1,13 +1,15 @@
 
 import React from 'react'
 import { GlobalStyles } from '../../styles/GlobalStyles'
-
-export const App: React.FC = () => {
+import { ThemeProvider } from 'styled-components'
+import { theme } from '../../styles/Theme'
+import { CardMain } from '../../components/CardMain'
+export const Home: React.FC = () => {
 
   return (
-    <>
-      <h1>olá mundo</h1>
+    <ThemeProvider theme={theme}>
+      <CardMain />
       <GlobalStyles />
-    </>
+    </ThemeProvider>
   )
 }
