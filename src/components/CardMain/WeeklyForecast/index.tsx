@@ -1,36 +1,51 @@
 import React from 'react'
 import * as S from './style'
+import clear_night from '../../../assets/icons/clear_night.svg'
+import clear_day from '../../../assets/icons/clear_day.svg'
+import fog from '../../../assets/icons/fog.svg'
+import cloud from '../../../assets/icons/cloud.svg'
+import cloudly_day from '../../../assets/icons/cloudly_day.svg'
+import cloudly_night from '../../../assets/icons/cloudly_night.svg'
+
 
 export const WeeklyForecast: React.FC = () => {
     return (
       <S.ContainerIcon>
         <div>
-          <h2>🌤</h2>
+          <S.IconContainerForecast>
+            <S.Icon src={clear_night} />
+          </S.IconContainerForecast>
           <h2>26º</h2>
         </div>
         <div>
-          <h2>☀️</h2>
-          <h2>31º</h2>
+          <S.IconContainerForecast>
+            <S.Icon src={clear_day} />
+          </S.IconContainerForecast>
+          <h2>26º</h2>
         </div>
         <div>
-          <h2>⛅️</h2>
-          <h2>33º</h2>
+          <S.IconContainerForecast>
+            <S.Icon src={fog} />
+          </S.IconContainerForecast>
+          <h2>26º</h2>
         </div>
         <div>
-          <h2>⛈</h2>
-          <h2>35º</h2>
+          <S.IconContainerForecast>
+            <S.Icon src={cloud} />
+          </S.IconContainerForecast>
+          <h2>26º</h2>
         </div>
         <div>
-          <h2>🌦</h2>
-          <h2>25º</h2>
+          <S.IconContainerForecast>
+            <S.Icon src={cloudly_day} />
+          </S.IconContainerForecast>
+          <h2>26º</h2>
         </div>
         <div>
-          <h2>⛅️</h2>
-          <h2>22º</h2>
-        </div>
-        <div>
-          <h2>🌦</h2>
-          <h2>27º</h2>
+          <S.IconContainerForecast>
+            <S.Icon src={cloudly_night} />
+          </S.IconContainerForecast>
+          <h2>26º</h2>
         </div>
       </S.ContainerIcon>
     )

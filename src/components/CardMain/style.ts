@@ -9,7 +9,7 @@ export const CardMain = styled.div`
   width: 100vw;
   height: 100vh;
 
-  background-color: ${props => props.theme.nightColor};
+  background-color: ${props => props.theme.dayColor};
   
   #header {
     display: flex;

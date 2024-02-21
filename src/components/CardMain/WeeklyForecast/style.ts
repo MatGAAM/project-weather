@@ -12,3 +12,16 @@ export const ContainerIcon = styled.div`
 
 `;
 
+
+export const IconContainerForecast = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.3rem;
+  height: 2.3rem;
+`
+
+export const Icon = styled.img`
+  width: 100%;
+  height: 100%;
+`
