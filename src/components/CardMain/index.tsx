@@ -4,6 +4,7 @@ import * as S from "./style"
 import { WeeklyForecast } from './WeeklyForecast'
 import { MainContent } from './MainContent'
 import { getWeather } from '../../services/apiRequest'
+import { Header } from './Header'
 // import axios from 'axios'
 // axios.get(`https://api.hgbrasil.com/weather?key=688a8890`)
 
@@ -45,7 +46,7 @@ export const CardMain:React.FC = () => {
   return (
     <S.CardMain>
       <div id='header'>
-        <h2>São Paulo</h2>
+        <Header />
       </div>
       <div id='mainContent'>
         <MainContent />
