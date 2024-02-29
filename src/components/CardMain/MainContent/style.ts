@@ -11,6 +11,10 @@ export const mainContainer = styled(centeredDiv)`
   flex-direction: column;
   justify-content: space-around;
 
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  
+
   width: 60vw;
   height: 100%;
 
@@ -36,6 +40,10 @@ export const infoWind = styled(centeredDiv)`
 `
 export const minMaxTemperature = styled(centeredDiv)`
   color: ${props => props.theme.nightValueColor};
+
+  > div {
+    display: flex;
+  }
 `
 export const IconContainerForecast = styled(centeredDiv)`
 
@@ -51,5 +59,5 @@ export const Icon = styled.img`
 `
 
 export const Wind = styled.div`
-  color: ${props => props.theme.afternoonValueColor};
+  color: ${props => props.theme.nightValueColor};
 `

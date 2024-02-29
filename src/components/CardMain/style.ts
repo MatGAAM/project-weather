@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import imgURL from '../../assets/noite-estrelada.jpg'
 
 export const CardMain = styled.div`
   display: flex;
@@ -9,7 +10,10 @@ export const CardMain = styled.div`
   width: 100vw;
   height: 100vh;
 
-  background-color:  #68d6dd;
+  background: ${props => props.theme.nightGradientColor};
+  background-image: url(${imgURL});
+  background-size: cover;
+  background-repeat: no-repeat;
   
   #header {
     display: flex;

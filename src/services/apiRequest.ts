@@ -8,7 +8,7 @@ export const getWeather = () => {
       "by": "woeid",
       "valid_key": true,
       "results": {
-        "temp": 20,
+        "temp": 21,
         "date": "20/02/2024",
         "time": "18:14",
         "condition_code": "45",
@@ -33,7 +33,7 @@ export const getWeather = () => {
           {
             "date": "20/02",
             "weekday": "Ter",
-            "max": 26,
+            "max": 29,
             "min": 18,
             "cloudiness": 12,
             "rain": 11.33,
@@ -159,5 +159,5 @@ export const getWeather = () => {
       "from_cache": true
     }
     console.log('response', response)
-    return response
+    return response.results
   }

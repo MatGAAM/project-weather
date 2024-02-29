@@ -6,10 +6,9 @@ export const ContainerIcon = styled.div`
   justify-content: space-around;
 
   width: 100vw;
-
-  background-color: ${props => props.theme.nightColor};
   color: ${props => props.theme.nightValueColor};
-
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
 `;
 
 

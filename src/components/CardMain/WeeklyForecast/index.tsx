@@ -7,8 +7,20 @@ import cloud from '../../../assets/icons/cloud.svg'
 import cloudly_day from '../../../assets/icons/cloudly_day.svg'
 import cloudly_night from '../../../assets/icons/cloudly_night.svg'
 
+interface Props {
+  forecastWeek: [
+    {
+      date: string
+      max: number
+      min: number
+    }
+  ]
+}
 
-export const WeeklyForecast: React.FC = () => {
+export const WeeklyForecast: React.FC<Props> = ({ forecastWeek }) => {
+
+  console.log('forecastWeek: ', forecastWeek)
+
     return (
       <S.ContainerIcon>
         <div>
