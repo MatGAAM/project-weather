@@ -3,8 +3,9 @@ import React, { useEffect, useState } from 'react'
 import * as S from "./style"
 import { WeeklyForecast } from './WeeklyForecast'
 import { MainContent } from './MainContent'
-import { getWeather } from '../../services/apiRequest'
+// import { getWeather } from '../../services/apiRequest'
 import { Header } from './Header'
+import axios from 'axios'
 // import axios from 'axios'
 // axios.get(`https://api.hgbrasil.com/weather?key=688a8890`)
 
@@ -31,16 +32,14 @@ export const CardMain:React.FC = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      try {
-        const response = await getWeather();
+        console.log('oxi')
+        const response = await axios.get(`https://api.hgbrasil.com/weather?key=688a8890`)
+        console.log('response', response)
         setForecastData(response);
-      } catch (err) {
-        console.error(err);
-      }
     };
     
     fetchData();
-  }, []);
+  }, [forecastData]);
 
   console.log('forecastData', forecastData)
 
